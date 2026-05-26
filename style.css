@@ -1,0 +1,215 @@
+body{
+
+    margin:0;
+
+    background:black;
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    overflow:auto;
+}
+
+/* MAIN LAYOUT */
+
+#mainWrapper{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:15px;
+}
+
+/* GAME */
+
+#gameContainer{
+
+    position:relative;
+}
+
+canvas{
+
+    background:#111;
+
+    border:4px solid white;
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+}
+
+/* PLAY BUTTON */
+
+#playButton{
+
+    position:absolute;
+
+    left:50%;
+    top:88%;
+
+    transform:translateX(-50%);
+
+    padding:14px 34px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:lime;
+
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:10;
+}
+
+#playButton:hover{
+
+    background:white;
+}
+
+/* CONTROLS */
+
+#controlsBox{
+
+    width:260px;
+
+    background:#181818;
+
+    border:3px solid white;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    box-sizing:border-box;
+
+    max-height:600px;
+
+    overflow-y:auto;
+}
+
+/* HEADERS */
+
+#controlsBox h2{
+
+    margin-top:0;
+
+    color:cyan;
+
+    font-size:24px;
+}
+
+#controlsBox h3{
+
+    color:orange;
+
+    margin-bottom:8px;
+
+    font-size:18px;
+}
+
+/* TEXT */
+
+#controlsBox p{
+
+    margin:6px 0;
+
+    font-size:13px;
+
+    line-height:1.3;
+
+    color:white;
+}
+
+/* SECTIONS */
+
+.scrollSection{
+
+    max-height:110px;
+
+    overflow-y:auto;
+
+    padding-right:6px;
+}
+
+/* SCROLLBAR */
+
+.scrollSection::-webkit-scrollbar,
+#controlsBox::-webkit-scrollbar{
+
+    width:7px;
+}
+
+.scrollSection::-webkit-scrollbar-thumb,
+#controlsBox::-webkit-scrollbar-thumb{
+
+    background:#555;
+
+    border-radius:10px;
+}
+
+.scrollSection::-webkit-scrollbar-track,
+#controlsBox::-webkit-scrollbar-track{
+
+    background:#222;
+}
+
+/* HR */
+
+hr{
+
+    border:1px solid #333;
+
+    margin:12px 0;
+}
+
+#restartButton{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%, -50%);
+
+    padding:22px 50px;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:lime;
+
+    color:black;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+}
+
+#restartButton:hover{
+
+    background:white;
+}
